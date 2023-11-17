@@ -22,17 +22,52 @@ body {
 
 p {
   font-size: 14px;
+  text-align: center;
 }
 
 h2 {
   font-size: 35px;
   color: #ed4f2e;
   text-transform: uppercase;
+  margin-bottom: 1em;
 }
 
 h3 {
+  text-align: center;
   color: #1f2c33;
   text-transform: uppercase;
+}
+
+.line {
+  width: 100px;
+  height: 1px;
+  background-color: #9f9f9f;
+  margin: 1em 0;
+  position: relative;
+}
+.line::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #9f9f9f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(100%, -50%);
+}
+.line::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #9f9f9f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, -50%);
 }
 
 header {
@@ -134,7 +169,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 5rem 200px;
+  padding: 5rem 4rem;
 }
 #services article {
   display: flex;
@@ -143,51 +178,36 @@ main {
   align-items: center;
   flex-wrap: wrap;
   background-color: #ffffff;
-  padding: 5rem 200px;
+  padding: 5rem 4rem;
   border-radius: 25px;
 }
-#services article #services-listed {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-#services article #services-listed .services-listed--card {
+#services article #services-desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 30%;
-  margin: 2rem 0;
-  padding: 2rem;
-  border-radius: 25px;
-  background-color: #ebebeb;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
+  width: 40%;
+  margin-bottom: 2em;
 }
-#services article #services-listed .services-listed--card h3 {
-  margin-bottom: 1em;
+#services article #services-listed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 500px;
 }
-#services article #services-listed .services-listed--card p {
-  margin-bottom: 1em;
-}
-#services article #services-listed .services-listed--card a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ed4f2e;
-  border: 2px solid #ed4f2e;
-  border-radius: 15px;
-  transition: all 0.3s ease;
-  padding: 5px 35px;
-  font-size: 1.2rem;
-}
-#services article #services-listed .services-listed--card a:hover {
-  background-color: #ffffff;
-  color: #ed4f2e;
-  border-color: #ffffff;
+#services article #services-listed .services-listed--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  max-width: 350px;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

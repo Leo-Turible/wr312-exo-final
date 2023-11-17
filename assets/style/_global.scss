@@ -42,15 +42,52 @@ body {
 
 p {
     font-size: $text-size;
+    text-align: center;
 }
 
 h2 {
     font-size: $titles-size;
     color: $primary-color;
     text-transform: uppercase;
+    margin-bottom: $base-spacing;
 }
 
 h3 {
+    text-align: center;
     color: $quaternary-color;
     text-transform: uppercase;
+}
+
+.line {
+    width: 100px;
+    height: 1px;
+    background-color: darken($tertiary-color , 30%);
+    margin: $base-spacing 0;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid darken($tertiary-color , 30%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(100%, -50%);
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid darken($tertiary-color , 30%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-100%, -50%);
+    }
 }
