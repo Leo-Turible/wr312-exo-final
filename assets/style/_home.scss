@@ -1,0 +1,45 @@
+main {
+    height: auto;
+    width: 100%;
+}
+
+#services {
+    background-color: $tertiary-color;
+    @include flex(column, center, center);
+    padding: 5rem $side-padding;
+
+    article {
+        @include flex(column, center, center);
+        background-color: $secondary-color;
+        padding: 5rem $side-padding;
+        border-radius: 25px;
+
+        #services-listed {
+            @include flex(row, space-around, center, wrap);
+            width: 100%;
+
+            .services-listed--card {
+                @include flex(column, center, center);
+                width: 30%;
+                margin: 2rem 0;
+                padding: 2rem;
+                border-radius: 25px;
+                background-color: $tertiary-color;
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+                text-align: center;
+                
+                h3 {
+                    margin-bottom: $base-spacing;
+                }
+
+                p {
+                    margin-bottom: $base-spacing;
+                }
+
+                a {
+                    @include btn($primary-color, $primary-color);
+                }
+            }
+        }
+    }
+}
