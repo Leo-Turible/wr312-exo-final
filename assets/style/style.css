@@ -203,11 +203,21 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   flex-wrap: wrap;
   max-width: 350px;
   width: 100%;
   height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+#services article #services-listed .services-listed--card img {
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 50px;
+}
+#services article #services-listed .services-listed--card:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
