@@ -73,7 +73,7 @@ h3 {
     width: 100px;
     height: 1px;
     background-color: darken($tertiary-color , 30%);
-    margin: $base-spacing 0;
+    margin: $large-spacing 0;
     position: relative;
 
     &::after {

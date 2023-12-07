@@ -68,13 +68,15 @@ main {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            cursor: pointer;
         }
     }
 }
 
 /*------------------------------*/
 
-#video, #blog {
+#video,
+#blog {
     div {
         @extend %w-h-100;
         background-color: transparentize($quaternary-color, 0.1);
@@ -163,22 +165,76 @@ main {
     height: 500px;
     @include background('../images/sep_back.png');
     @include flex(column, center, center);
+
     div {
         @include flex(column, center, center);
+
         h2 {
             color: $second-text-color;
             text-align: center;
         }
+
         h3 {
             color: $second-text-color;
             text-align: center;
             @include font(1.5rem, lighter);
         }
+
         a {
             @include btn($secondary-color, $secondary-color);
             margin-top: $large-spacing;
         }
     }
+}
+
+/*------------------------------*/
+
+
+
+/*PROJECTS*/
+
+#projects {
+    article {
+        ul {
+            list-style: none;
+            @include flex(row, center, center, wrap);
+            gap: $small-spacing;
+            margin: 3em 0;
+
+            li {
+                padding: 0 12px;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                &:hover,
+                &:first-child {
+                    transform: scale(1.1);
+                    background-color: $primary-color;
+                    color: $second-text-color;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        #projects-list {
+            @include flex(row, center, center, wrap);
+            gap: $large-spacing;
+            width: 100%;
+
+            img {
+                @extend %w-h-100;
+                max-width: 350px;
+                max-height: 350px;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
 }
 
 /*------------------------------*/
