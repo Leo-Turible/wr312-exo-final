@@ -3,7 +3,7 @@
 /*VARIABLES*/
 /*--------------------*/
 /*HÉRITAGES*/
-#pricing article #price-list .price-list-card .price-list-card__infos, #pricing article #price-list .price-list-card .price-list-card__cost, #pricing article #price-list .price-list-card, #video div, #services article #services-listed .services-listed__card img, #services article #services-listed .services-listed__card {
+#pricing article #price-list .price-list-card .price-list-card__infos, #pricing article #price-list .price-list-card .price-list-card__cost, #pricing article #price-list .price-list-card, #video div, #blog div, #services article #services-listed .services-listed__card img, #services article #services-listed .services-listed__card {
   width: 100%;
   height: 100%;
 }
@@ -237,13 +237,9 @@ main {
   width: 100%;
   height: 500px;
   background-image: url("../images/video.png");
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-#video div {
-  background-color: rgba(31, 44, 51, 0.9);
-  position: relative;
+  background-repeat: no-repeat;
 }
 #video div svg {
   position: absolute;
@@ -253,6 +249,11 @@ main {
 }
 
 /*------------------------------*/
+#video div, #blog div {
+  background-color: rgba(31, 44, 51, 0.9);
+  position: relative;
+}
+
 /*PRICING*/
 #pricing article #price-list {
   display: flex;
@@ -333,6 +334,56 @@ main {
   margin-top: 2em;
 }
 #pricing article #price-list .price-list-card .price-list-card__infos a:hover {
+  background-color: #ffffff;
+  color: #ed4f2e;
+  border-color: #ffffff;
+}
+
+/*------------------------------*/
+/*BLOG*/
+#blog {
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/sep_back.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#blog div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#blog div h2 {
+  color: #ffffff;
+  text-align: center;
+}
+#blog div h3 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+}
+#blog div a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding: 15px 35px;
+  font-size: 14px;
+  margin-top: 2em;
+}
+#blog div a:hover {
   background-color: #ffffff;
   color: #ed4f2e;
   border-color: #ffffff;
