@@ -238,3 +238,116 @@ main {
 }
 
 /*------------------------------*/
+
+
+
+/*REVIEW & SUBSCRIBE*/
+
+#review-sub {
+    @include flex(row, center, center, wrap);
+    z-index: -1;
+
+    h2 {
+        color: $second-text-color;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #review {
+        @include flex(column, center, center);
+        flex: 1;
+        padding: $section-padding;
+        @include background('../images/customer_back.png');
+        @extend %w-h-100;
+        position: relative;
+        z-index: -1;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: transparentize($primary-color, 0.1);
+            z-index: -1;
+        }
+
+        p {
+            color: $second-text-color;
+            text-align: center;
+            @include font($text-size, lighter);
+            margin-bottom: $base-spacing;
+        }
+
+        .dots {
+            position: absolute;
+            bottom: 5%;
+            right: 50%;
+            transform: translateX(50%);
+            height: auto;
+            @include flex(row, space-evenly, center, nowrap);
+            gap: 0.5rem;
+            padding: 1rem;
+
+            li {
+                list-style: none;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                border: 2px solid $second-text-color;
+                background-color: $second-text-color;
+
+                &:nth-child(2) {
+                    background-color: transparentize($quaternary-color, 0.1);
+                    border: 2px solid transparentize($quaternary-color, 0.1);
+                }
+            }
+        }
+    }
+
+    #subscribe {
+        @include flex(column, center, center);
+        @extend %w-h-100;
+        flex: 1;
+        padding: $section-padding;
+        @include background('../images/suscribe_back.png');
+        position: relative;
+        z-index: -1;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: transparentize($quaternary-color, 0.1);
+            z-index: -1;
+        }
+
+        form {
+            @include flex(column, center, center);
+            width: 100%;
+            z-index: 2;
+
+            input {
+                &:first-child {
+                    width: 50%;
+                    padding: $base-spacing;
+                    margin-bottom: $base-spacing;
+                    border: 1px solid $second-text-color;
+                    border-radius: 5px;
+                    @include font($text-size, lighter);
+                }
+
+                &:last-child {
+                    @include btn($primary-color, $primary-color, 5px);
+                    margin-top: $large-spacing;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------*/

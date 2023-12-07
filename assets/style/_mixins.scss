@@ -10,13 +10,13 @@
     transition: $property $duration $timing-function;
 }
 
-@mixin btn($color, $border-color) {
+@mixin btn($color, $border-color, $border-radius: 10px) {
     text-transform: uppercase;
     text-decoration: none;
     color: $color;
     
     border: 2px solid $border-color;
-    border-radius: 10px;
+    border-radius: $border-radius;
     
     @include animate(all, 0.3s);
 
