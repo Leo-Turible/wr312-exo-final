@@ -166,6 +166,79 @@ nav ul li a:hover {
   color: #ed4f2e;
 }
 
+/*FOOTER*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1f2c33;
+  width: 100%;
+}
+footer p,
+footer li {
+  color: #b8b8b8;
+}
+footer #footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 2em;
+}
+footer #footer-top .footer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 20%;
+  padding: 1em;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+footer #footer-top .footer-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1em;
+  color: #ebebeb;
+}
+footer #footer-top .footer-card p {
+  text-align: justify;
+}
+footer #footer-top .footer-card ul {
+  list-style: none;
+}
+footer #footer-top .footer-card .footer-card__contact {
+  margin-top: 0.5em;
+}
+footer #footer-top .footer-card .footer-card__gallery {
+  margin-top: 0.5em;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5em;
+}
+footer #footer-top .footer-card .footer-card__gallery li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+footer #footer-down {
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+  background-color: #4f7082;
+}
+footer #footer-down p {
+  color: #ebebeb;
+}
+
+/*------------------------------------*/
 main {
   height: auto;
   width: 100%;
@@ -449,6 +522,13 @@ main {
   text-align: center;
   margin: 10px 0;
 }
+#review-sub h2,
+#review-sub p,
+#review-sub form,
+#review-sub img,
+#review-sub ul {
+  z-index: 2;
+}
 #review-sub #review {
   display: flex;
   flex-direction: column;
@@ -462,7 +542,6 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  z-index: -1;
 }
 #review-sub #review::after {
   content: "";
@@ -472,7 +551,6 @@ main {
   height: 100%;
   width: 100%;
   background-color: rgba(237, 79, 46, 0.9);
-  z-index: -1;
 }
 #review-sub #review p {
   color: #ffffff;
@@ -521,7 +599,6 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  z-index: -1;
 }
 #review-sub #subscribe::after {
   content: "";
@@ -531,7 +608,6 @@ main {
   height: 100%;
   width: 100%;
   background-color: rgba(31, 44, 51, 0.9);
-  z-index: -1;
 }
 #review-sub #subscribe form {
   display: flex;
@@ -540,7 +616,6 @@ main {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  z-index: 2;
 }
 #review-sub #subscribe form input:first-child {
   width: 50%;

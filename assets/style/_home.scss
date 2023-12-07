@@ -253,6 +253,14 @@ main {
         margin: 10px 0;
     }
 
+    h2,
+    p,
+    form,
+    img,
+    ul {
+        z-index: 2;
+    }
+
     #review {
         @include flex(column, center, center);
         flex: 1;
@@ -260,7 +268,7 @@ main {
         @include background('../images/customer_back.png');
         @extend %w-h-100;
         position: relative;
-        z-index: -1;
+        // z-index: -1;
 
         &::after {
             content: '';
@@ -270,7 +278,7 @@ main {
             height: 100%;
             width: 100%;
             background-color: transparentize($primary-color, 0.1);
-            z-index: -1;
+            // z-index: -1;
         }
 
         p {
@@ -313,7 +321,6 @@ main {
         padding: $section-padding;
         @include background('../images/suscribe_back.png');
         position: relative;
-        z-index: -1;
 
         &::after {
             content: '';
@@ -323,13 +330,11 @@ main {
             height: 100%;
             width: 100%;
             background-color: transparentize($quaternary-color, 0.1);
-            z-index: -1;
         }
 
         form {
             @include flex(column, center, center);
             width: 100%;
-            z-index: 2;
 
             input {
                 &:first-child {
