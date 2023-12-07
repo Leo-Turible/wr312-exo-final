@@ -57,12 +57,39 @@ main {
 /*VIDEO*/
 
 #video {
-    @extend %w-h-100;
+    // @extend %w-h-100;
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/video.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // img {
+    //     @extend %w-h-100;
+    //     object-fit: cover;
+    //     object-position: center;
+    //     position: relative;
+    //     &::after {
+    //         content: '';
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         height: 100%;
+    //         width: 100%;
+    //         background-color: rgba($color: #000000, $alpha: 1.0);
+    //     }
+    // }
 
-    img {
+    div {
         @extend %w-h-100;
-        object-fit: cover;
-        object-position: center;
+        background-color: transparentize($quaternary-color, 0.1);
+        position: relative;
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 }
 
