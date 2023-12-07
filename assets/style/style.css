@@ -3,7 +3,7 @@
 /*VARIABLES*/
 /*--------------------*/
 /*HÉRITAGES*/
-#pricing article #price-list .price-list-card .price-list-card__cost, #pricing article #price-list .price-list-card, #video img, #video, #services article #services-listed .services-listed--card img, #services article #services-listed .services-listed--card {
+#pricing article #price-list .price-list-card .price-list-card__infos, #pricing article #price-list .price-list-card .price-list-card__cost, #pricing article #price-list .price-list-card, #video img, #video, #services article #services-listed .services-listed__card img, #services article #services-listed .services-listed__card {
   width: 100%;
   height: 100%;
 }
@@ -122,7 +122,7 @@ header a {
   text-decoration: none;
   color: #ffffff;
   border: 2px solid #ffffff;
-  border-radius: 15px;
+  border-radius: 10px;
   transition: all 0.3s ease;
   padding: 15px 35px;
   font-size: 14px;
@@ -130,7 +130,7 @@ header a {
 header a:hover {
   background-color: #ffffff;
   color: #ed4f2e;
-  border-color: secondary-color;
+  border-color: #ffffff;
 }
 
 nav {
@@ -214,7 +214,7 @@ main {
   width: 100%;
   min-height: 500px;
 }
-#services article #services-listed .services-listed--card {
+#services article #services-listed .services-listed__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,11 +224,11 @@ main {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-#services article #services-listed .services-listed--card img {
+#services article #services-listed .services-listed__card img {
   max-width: 50px;
   max-height: 50px;
 }
-#services article #services-listed .services-listed--card:hover {
+#services article #services-listed .services-listed__card:hover {
   transform: scale(1.1);
 }
 
@@ -278,10 +278,50 @@ main {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
-#pricing article #price-list .price-list-card .price-list-card__cost h4 span:nth-child(1) {
+#pricing article #price-list .price-list-card .price-list-card__cost h4 span {
   font-size: 3rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
+}
+#pricing article #price-list .price-list-card .price-list-card__infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+#pricing article #price-list .price-list-card .price-list-card__infos ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+#pricing article #price-list .price-list-card .price-list-card__infos ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.5em;
+}
+#pricing article #price-list .price-list-card .price-list-card__infos a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ed4f2e;
+  border: 2px solid #ed4f2e;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding: 5px 35px;
+  font-size: 1.2rem;
+  background-color: #ed4f2e;
+  color: #ffffff;
+  margin-top: 2em;
+}
+#pricing article #price-list .price-list-card .price-list-card__infos a:hover {
+  background-color: #ffffff;
+  color: #ed4f2e;
+  border-color: #ffffff;
 }
 
 /*------------------------------*/

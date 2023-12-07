@@ -33,7 +33,7 @@ main {
             width: 100%;
             min-height: 500px;
 
-            .services-listed--card {
+            .services-listed__card {
                 @include flex(column, center, center);
                 max-width: 350px;
                 @extend %w-h-100;
@@ -58,6 +58,7 @@ main {
 
 #video {
     @extend %w-h-100;
+
     img {
         @extend %w-h-100;
         object-fit: cover;
@@ -89,25 +90,48 @@ main {
                 &:hover {
                     border: 1px solid $primary-color;
                 }
+
                 .price-list-card__title {
 
                     h3 {
                         padding-top: $large-spacing;
                     }
                 }
+
                 .price-list-card__cost {
                     padding: $base-spacing;
                     margin: $large-spacing 0;
                     background-color: $tertiary-color;
                     @extend %w-h-100;
                     text-align: center;
+
                     h4 {
                         @include font(1.5rem, 400);
+
                         span {
-                            &:nth-child(1) {
-                                @include font(3rem, 700);
-                            }
+                            @include font(3rem, 700);
                         }
+                    }
+                }
+
+                .price-list-card__infos {
+                    @include flex(column, center, center);
+                    margin-bottom: $large-spacing;
+                    @extend %w-h-100;
+
+                    ul {
+                        @include flex(column, center, center, wrap);
+                        list-style: none;
+
+                        li {
+                            @include font(1rem, 400);
+                            margin-bottom: $small-spacing;
+                        }
+                    }
+
+                    a {
+                        @include btn($primary-color, $primary-color);
+                        margin-top: $large-spacing;
                     }
                 }
             }
