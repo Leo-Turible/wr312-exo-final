@@ -572,5 +572,58 @@ main {
 }
 
 /*------------------------------*/
+/*CONTACT*/
+#contact article p {
+  width: 45%;
+}
+#contact article form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 100%;
+  margin-top: 2em;
+}
+#contact article form input:not([type=submit]) {
+  flex: 1 0 45%;
+  padding: 1em;
+}
+#contact article form textarea {
+  flex: 1 0 100%;
+  padding: 1em;
+  resize: none;
+}
+#contact article form input:not([type=submit]),
+#contact article form textarea {
+  border: 1px solid #1f2c33;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+}
+#contact article form input[type=submit] {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ed4f2e;
+  border: 2px solid #ed4f2e;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding: 5px 35px;
+  font-size: 1.2rem;
+  background-color: #ed4f2e;
+  color: #ffffff;
+  flex: 0 0 20%;
+  padding: 1em;
+  margin: auto;
+}
+#contact article form input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #ed4f2e;
+  border-color: #ffffff;
+}
+
+/*------------------------------*/
 
 /*# sourceMappingURL=style.css.map */

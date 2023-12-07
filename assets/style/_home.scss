@@ -351,3 +351,49 @@ main {
 }
 
 /*------------------------------*/
+
+
+
+/*CONTACT*/
+
+#contact {
+    article {
+        p {
+            width: 45%;
+        }
+
+        form {
+            @include flex(row, space-between, center);
+            gap: $large-spacing;
+            width: 100%;
+            margin-top: $large-spacing;
+
+            input:not([type="submit"]) {
+                flex: 1 0 45%;
+                padding: $base-spacing;
+            }
+
+            textarea {
+                flex: 1 0 100%;
+                padding: $base-spacing;
+                resize: none;
+            }
+
+            input:not([type="submit"]),
+            textarea {
+                border: 1px solid $quaternary-color;
+                border-radius: 5px;
+                @include font($text-size, lighter);
+            }
+
+            input[type="submit"] {
+                @include btn($primary-color, $primary-color);
+                flex: 0 0 20%;
+                padding: $base-spacing;
+                margin: auto;
+            }
+        }
+    }
+}
+
+/*------------------------------*/
