@@ -4,7 +4,7 @@
 /*--------------------*/
 /*HÉRITAGES*/
 #review-sub #subscribe, #review-sub #review, #projects article #projects-list img, #pricing article #price-list .price-list-card .price-list-card__infos, #pricing article #price-list .price-list-card .price-list-card__cost, #pricing article #price-list .price-list-card, #video div,
-#blog div, #services article #services-listed .services-listed__card img, #services article #services-listed .services-listed__card, nav ul {
+#blog div, #services article #services-listed .services-listed__card img, #services article #services-listed .services-listed__card {
   width: 100%;
   height: 100%;
 }
@@ -335,6 +335,7 @@ footer #footer-down p {
     height: 80px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
+    z-index: 9999;
   }
   nav .menu-btn .menu-btn-burger {
     width: 50px;
@@ -385,6 +386,8 @@ footer #footer-down p {
     margin: 0 0 0 -100%;
     transition: all 0.5s ease-in-out;
     z-index: 99;
+    width: 100%;
+    height: 100vh;
   }
   nav #menu li {
     margin: 1em 0;
@@ -410,9 +413,13 @@ footer #footer-down p {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    padding: 0.5em;
   }
   footer #footer-top .footer-card {
     width: 100%;
+  }
+  footer #footer-down {
+    padding: 0.5em;
   }
 }
 /*------------------------------------*/
@@ -505,6 +512,7 @@ main {
 #blog div {
   background-color: rgba(31, 44, 51, 0.9);
   position: relative;
+  padding: 0.5em;
 }
 
 /*PRICING*/
@@ -892,6 +900,12 @@ main {
 @media screen and (max-width: 768px) {
   section:not(#video, #blog, #review-sub), article {
     padding: 15px !important;
+  }
+  section h2 {
+    text-align: center;
+  }
+  #review-sub img {
+    margin-bottom: 50px;
   }
 }
 

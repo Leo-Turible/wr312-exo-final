@@ -81,6 +81,7 @@ main {
         @extend %w-h-100;
         background-color: transparentize($quaternary-color, 0.1);
         position: relative;
+        padding: $small-spacing;
     }
 }
 
@@ -423,5 +424,17 @@ main {
 @media screen and (max-width: 768px) {
     section:not(#video, #blog, #review-sub), article {
         padding: 15px !important;
+    }
+
+    section {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    #review-sub {
+        img {
+            margin-bottom: 50px;
+        }
     }
 }
