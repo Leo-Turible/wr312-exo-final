@@ -244,7 +244,7 @@ main {
 /*REVIEW & SUBSCRIBE*/
 
 #review-sub {
-    @include flex(row, center, center, wrap);
+    @include flex(row, center, stretch, wrap);
     z-index: -1;
 
     h2 {
@@ -268,7 +268,7 @@ main {
         @include background('../images/customer_back.png');
         @extend %w-h-100;
         position: relative;
-        // z-index: -1;
+        height: auto;
 
         &::after {
             content: '';
@@ -317,6 +317,7 @@ main {
     #subscribe {
         @include flex(column, center, center);
         @extend %w-h-100;
+        height: auto;
         flex: 1;
         padding: $section-padding;
         @include background('../images/suscribe_back.png');

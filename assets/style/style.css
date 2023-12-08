@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit&display=swap");
 /*VARIABLES*/
 /*--------------------*/
 /*HÉRITAGES*/
@@ -22,7 +22,7 @@
 body {
   height: 100%;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
@@ -206,7 +206,7 @@ footer #footer-top .footer-card > img {
 footer #footer-top .footer-card h3 {
   font-size: 1.25rem;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 1em;
   color: #ebebeb;
 }
@@ -294,7 +294,7 @@ footer #footer-top .footer-card form input[type=submit] {
   color: #ffffff;
   font-size: 14px;
   font-weight: lighter;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 5px !important;
 }
 footer #footer-top .footer-card form input[type=submit]:hover {
@@ -441,12 +441,12 @@ main {
 #pricing article #price-list .price-list-card .price-list-card__cost h4 {
   font-size: 1.5rem;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #pricing article #price-list .price-list-card .price-list-card__cost h4 span {
   font-size: 3rem;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #pricing article #price-list .price-list-card .price-list-card__infos {
   display: flex;
@@ -467,7 +467,7 @@ main {
 #pricing article #price-list .price-list-card .price-list-card__infos ul li {
   font-size: 1rem;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 0.5em;
 }
 #pricing article #price-list .price-list-card .price-list-card__infos a {
@@ -520,7 +520,7 @@ main {
   text-align: center;
   font-size: 1.5rem;
   font-weight: lighter;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #blog div a {
   text-transform: uppercase;
@@ -587,7 +587,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   z-index: -1;
 }
@@ -616,6 +616,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  height: auto;
 }
 #review-sub #review::after {
   content: "";
@@ -631,7 +632,7 @@ main {
   text-align: center;
   font-size: 14px;
   font-weight: lighter;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 1em;
 }
 #review-sub #review .dots {
@@ -666,6 +667,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  height: auto;
   flex: 1;
   padding: 5rem 4rem;
   background-image: url("../images/suscribe_back.png");
@@ -699,7 +701,7 @@ main {
   border-radius: 5px;
   font-size: 14px;
   font-weight: lighter;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #review-sub #subscribe form input:last-child {
   text-transform: uppercase;
@@ -750,7 +752,7 @@ main {
   border-radius: 5px;
   font-size: 14px;
   font-weight: lighter;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #contact article form input[type=submit] {
   text-transform: uppercase;
