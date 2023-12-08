@@ -422,12 +422,19 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 350px;
+  max-width: 250px;
   border: 1px solid #ebebeb;
   transition: all 0.3s ease-in-out;
 }
 #pricing article #price-list .price-list-card:hover {
   border: 1px solid #ed4f2e;
+  transform: scale(1.1);
+}
+#pricing article #price-list .price-list-card:hover .price-list-card__cost {
+  background-color: #ed4f2e;
+}
+#pricing article #price-list .price-list-card:hover .price-list-card__cost h4 {
+  color: #ffffff;
 }
 #pricing article #price-list .price-list-card .price-list-card__title h3 {
   padding-top: 2em;
@@ -437,6 +444,7 @@ main {
   margin: 2em 0;
   background-color: #ebebeb;
   text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 #pricing article #price-list .price-list-card .price-list-card__cost h4 {
   font-size: 1.5rem;

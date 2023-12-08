@@ -97,13 +97,22 @@ main {
 
             .price-list-card {
                 @include flex(column, center, center);
-                max-width: 350px;
+                max-width: 250px;
                 @extend %w-h-100;
                 border: 1px solid $tertiary-color;
                 transition: all 0.3s ease-in-out;
 
                 &:hover {
                     border: 1px solid $primary-color;
+                    transform: scale(1.1);
+
+                    & .price-list-card__cost {
+                        background-color: $primary-color;
+
+                        h4 {
+                            color: $second-text-color;
+                        }
+                    }
                 }
 
                 .price-list-card__title {
@@ -119,6 +128,7 @@ main {
                     background-color: $tertiary-color;
                     @extend %w-h-100;
                     text-align: center;
+                    transition: all 0.3s ease-in-out;
 
                     h4 {
                         @include font(1.5rem, 400);
