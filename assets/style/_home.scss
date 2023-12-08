@@ -413,3 +413,15 @@ main {
 }
 
 /*------------------------------*/
+
+
+
+
+/*-------PARTIE RESPONSIVE (MOBILE)-------*/
+
+/*GENERAL*/
+@media screen and (max-width: 768px) {
+    section:not(#video, #blog, #review-sub), article {
+        padding: 15px !important;
+    }
+}
