@@ -195,10 +195,13 @@ footer #footer-top .footer-card {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: 20%;
+  width: 25%;
   padding: 1em;
   border-radius: 10px;
   margin-bottom: 2em;
+}
+footer #footer-top .footer-card > img {
+  margin: 0 0 1em 0;
 }
 footer #footer-top .footer-card h3 {
   font-size: 1.25rem;
@@ -221,18 +224,89 @@ footer #footer-top .footer-card .footer-card__gallery {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.5em;
+  gap: 0.25em;
 }
 footer #footer-top .footer-card .footer-card__gallery li img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+footer #footer-top .footer-card .footer-card__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+footer #footer-top .footer-card .footer-card__social li a {
+  text-decoration: none;
+  color: #ebebeb;
+  transition: all 0.3s ease;
+}
+footer #footer-top .footer-card .footer-card__social li a:hover {
+  color: #ed4f2e;
+}
+footer #footer-top .footer-card .footer-card__social li a i {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+}
+footer #footer-top .footer-card form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  margin: 1em 0;
+}
+footer #footer-top .footer-card form input {
+  padding: 1em;
+}
+footer #footer-top .footer-card form input[type=email] {
+  width: 60%;
+  flex: 1 0 60%;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  background-color: rgba(135, 135, 135, 0.25);
+  color: #ffffff;
+}
+footer #footer-top .footer-card form input[type=submit] {
+  width: 40%;
+  flex: 1 0 40%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ed4f2e;
+  border: 2px solid #ed4f2e;
+  border-radius: 0 5px 5px 0;
+  transition: all 0.3s ease;
+  padding: 5px 35px;
+  font-size: 1.2rem;
+  background-color: #ed4f2e;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  padding: 5px !important;
+}
+footer #footer-top .footer-card form input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #ed4f2e;
+  border-color: #ffffff;
+}
 footer #footer-down {
   width: 100%;
   text-align: center;
   padding: 2em;
-  background-color: #4f7082;
+  background-color: #293a43;
 }
 footer #footer-down p {
   color: #ebebeb;
