@@ -316,7 +316,14 @@ footer {
 /*FOOTER*/
 @media screen and (max-width: 768px) {
     footer {
-        display: none;
+        #footer-top {
+            @include flex(column, center, center);
+            width: 100%;
+
+            .footer-card {
+                width: 100%;
+            }
+        }
     }
 }
 

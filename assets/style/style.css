@@ -403,8 +403,16 @@ footer #footer-down p {
 }
 /*FOOTER*/
 @media screen and (max-width: 768px) {
-  footer {
-    display: none;
+  footer #footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  footer #footer-top .footer-card {
+    width: 100%;
   }
 }
 /*------------------------------------*/
