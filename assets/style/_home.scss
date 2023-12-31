@@ -15,7 +15,6 @@ main {
         @include flex(column, center, center);
         background-color: $secondary-color;
         padding: $section-padding;
-        // border-radius: 25px;
         width: 100%;
     }
 }
@@ -46,8 +45,24 @@ main {
                     max-height: 50px;
                 }
 
-                &:hover {
-                    transform: scale(1.1);
+                @for $i from 1 through 3 {
+                    &:nth-child(#{$i}) {
+                        &:hover {
+                            transform: scale(1.1);
+                            border: 1px solid $primary-color;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+
+                @for $i from 4 through 6 {
+                    &:nth-child(#{$i}) {
+                        &:hover {
+                            transform: scale(1.1);
+                            border: 1px solid $quaternary-color;
+                            border-radius: 5px;
+                        }
+                    }
                 }
             }
         }
@@ -289,7 +304,6 @@ main {
             height: 100%;
             width: 100%;
             background-color: transparentize($primary-color, 0.1);
-            // z-index: -1;
         }
 
         p {

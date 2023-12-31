@@ -486,8 +486,35 @@ main {
   max-width: 50px;
   max-height: 50px;
 }
-#services article #services-listed .services-listed__card:hover {
+#services article #services-listed .services-listed__card:nth-child(1):hover {
   transform: scale(1.1);
+  border: 1px solid #ed4f2e;
+  border-radius: 5px;
+}
+#services article #services-listed .services-listed__card:nth-child(2):hover {
+  transform: scale(1.1);
+  border: 1px solid #ed4f2e;
+  border-radius: 5px;
+}
+#services article #services-listed .services-listed__card:nth-child(3):hover {
+  transform: scale(1.1);
+  border: 1px solid #ed4f2e;
+  border-radius: 5px;
+}
+#services article #services-listed .services-listed__card:nth-child(4):hover {
+  transform: scale(1.1);
+  border: 1px solid #1f2c33;
+  border-radius: 5px;
+}
+#services article #services-listed .services-listed__card:nth-child(5):hover {
+  transform: scale(1.1);
+  border: 1px solid #1f2c33;
+  border-radius: 5px;
+}
+#services article #services-listed .services-listed__card:nth-child(6):hover {
+  transform: scale(1.1);
+  border: 1px solid #1f2c33;
+  border-radius: 5px;
 }
 
 /*VIDEO*/
